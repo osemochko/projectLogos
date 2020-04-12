@@ -1,0 +1,14 @@
+
+<div class="container">
+   <mat-list role="list">
+     <mat-list-item
+       *ngFor="let model of models | async"
+       class="list-item"
+       role="listitem"
+       routerLinkActive="active-link"
+       [routerLink]="['category', model]">
+       {{model}}
+     </mat-list-item>
+   </mat-list>
+ </div>
+ 

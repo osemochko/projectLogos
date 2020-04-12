@@ -1,0 +1,64 @@
+<header>
+    <div class="logo-container">
+        <button
+        class="side-nav-btn"
+        (click) = "toggleSideNav.emit()">
+            <i class="material-icons icon-side-nav-btn">view_headline</i>
+        </button>
+        <div class="logo">
+            <h2>Craft&Kumpel</h2>
+        </div>
+    </div> 
+  
+    <div class="options-panel">
+        <div class="divider"></div>
+
+        <span 
+            class="basket"
+            routerLink="/basket"           
+        >
+            <i class="material-icons">shopping_cart</i>
+        </span>
+
+        <div class="divider"></div>
+
+        <div *ngIf="!(isLogined$ | async)" class="user-container">
+            <button
+              mat-button color="primary"
+              routerLink="/sign-up"
+              (click)="toggleSideNav.emit()"
+            >
+              Sign up
+            </button>
+      
+            <div class="divider"></div>
+      
+            <button
+              mat-button
+              routerLink="/login"
+              (click)="toggleSideNav.emit()"
+            >
+              Login
+            </button>
+        </div>
+
+        <div *ngIf="isLogined$ | async"  class="user-container">
+            <span class="user-name"> {{ (user$ | async).firstName }} {{ (user$ | async).lastName }} </span>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button
+                mat-menu-item
+                (click)="logOut()"
+                class="menu-item">
+                <i class="material-icons icon-logout">assignment_return</i>
+                <span>Logout</span>
+              </button>
+            </mat-menu>
+        </div>
+        
+    </div> 
+</header>
+
+

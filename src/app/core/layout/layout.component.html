@@ -1,0 +1,14 @@
+<app-header 
+(toggleSideNav)="toggleSideNav()"
+></app-header>
+
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" [(opened)]="opened" class="side-nav-container" >
+        <app-nav-list></app-nav-list>
+        
+    </mat-sidenav>
+  
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

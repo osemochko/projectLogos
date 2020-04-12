@@ -1,0 +1,25 @@
+<div class="dish-container">
+    <mat-card
+      *ngIf="dish"
+      class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{ dish.group }}</mat-card-title>
+        
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="dish">
+      <mat-card-content>
+        <p>{{ dish.description }}</p>
+      </mat-card-content>
+      <div class="price">
+        
+        <span class="price-val">{{ dish.price | currency }}</span>
+      </div>
+      <mat-card-actions>
+        <button
+          mat-raised-button
+          class="btns-basket">
+          Add to basket
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>

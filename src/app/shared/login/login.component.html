@@ -1,0 +1,57 @@
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="submit()">
+    <mat-form-field
+      class="form-field">
+      <mat-label>Email</mat-label>
+      <input
+        matInput formControlName="email"
+        [errorStateMatcher]="matcher"
+        placeholder="email@example.com">
+      <mat-error *ngIf="loginForm.get('email').hasError('email') && !loginForm.get('email').hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="loginForm.get('email').hasError('required')"
+      >
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field
+      class="form-field">
+      <mat-label>Enter your password</mat-label>
+      <input
+        matInput
+        formControlName="password"
+        [type]="hide ? 'password' : 'text'">
+      <mat-error *ngIf="loginForm.get('password').hasError('required')">
+        Password is <strong>required</strong>
+      </mat-error>
+      <button
+        mat-icon-button
+        matSuffix (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide">
+        <mat-icon>
+          {{hide ? 'visibility_off' : 'visibility'}}
+        </mat-icon>
+      </button>
+    </mat-form-field>
+
+    <div class="btns">
+      <button
+        type="submit"
+        mat-stroked-button
+        color="primary">
+        Login
+      </button>
+
+      <a
+        mat-button
+        color="primary"
+        routerLink="/sign-up">
+        To Sign In
+      </a>
+    </div>
+  </form>
+</div>
