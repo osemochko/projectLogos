@@ -9,9 +9,9 @@ import { CrudService } from 'src/app/services/crud.service';
 })
 export class NavListComponent {
 
-  public models: Observable<any>;
+  public groups: Observable<string[]>;
 
   constructor(private crudService: CrudService) {
-    this.models = this.crudService.navList;
+    this.groups = this.crudService.navList;
    }
 }

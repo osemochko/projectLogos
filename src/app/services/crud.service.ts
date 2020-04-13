@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import {filter, map, tap} from 'rxjs/operators';
+import {filter, map} from 'rxjs/operators';
 import { IDish } from '../interfaces/food.interface';
   
 @Injectable({
@@ -45,9 +45,8 @@ export class CrudService{
           );
     }
 
-    public modifyCar(dish: IDish): void {
+    public modifyDish(dish: IDish): void {
         this.http.put(`${this.URL}/dishes/${dish.id}`, dish)
           .subscribe((res) => console.log(res));
-    }
-      
+    }     
 }

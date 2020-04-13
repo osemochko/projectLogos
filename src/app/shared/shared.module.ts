@@ -39,4 +39,5 @@ const comp: any = [
     MatCardModule
   ]
 })
+
 export class SharedModule { }
