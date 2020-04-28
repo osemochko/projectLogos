@@ -1,26 +1,32 @@
 <div class="dish-container">
-    <mat-card
+  <mat-card
       *ngIf="dish"
       class="example-card">
+
+      <img mat-card-image [src]= "dish.img" alt="dish">
+
       <mat-card-header>
-        <mat-card-title>{{ dish.group }}</mat-card-title>
-        <mat-card-subtitle>{{ dish.nameDish }}</mat-card-subtitle>
-             
+        <mat-card-title>{{ dish.nameDish }}</mat-card-title>                     
       </mat-card-header>
-      <img mat-card-image src={{ dish.img }} alt="dish">
+      
+      <div class="divider"></div>
+      
       <mat-card-content>
-        <p>{{ dish.description }}</p>
+        <p><strong>Опис</strong>
+          <br>
+          {{ dish.description }}</p>
       </mat-card-content>
-      <div class="price">
-        
+
+      <div class="price">        
         <span class="price-val">{{ dish.price | currency }}</span>
       </div>
       <mat-card-actions>
         <button
           mat-raised-button
-          class="btns-basket">
-          Add to basket
+          class="btns-basket"
+          (click)="addToBasket(dish)">
+          Замовити
         </button>
       </mat-card-actions>
     </mat-card>
-  </div>
+</div>

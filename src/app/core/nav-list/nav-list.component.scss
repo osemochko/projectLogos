@@ -8,14 +8,14 @@
     transition: .3s all;
     cursor: pointer;
     outline: none;
-    color: #ffffff;
-    padding-left: 20px !important;
+    color: #fff;
+    // padding-left: 15px !important;
   
     &:hover {
       color: #F2B33F;
     }
   }
   
-//   .active-link {
-//     color: #F2B33F;
-//   }
+.active-link {
+    color: #F2B33F;
+  }

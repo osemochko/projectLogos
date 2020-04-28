@@ -1,33 +1,41 @@
 <div class="category-container">
     <mat-card
-    *ngFor="let dish of dishes"
+      *ngFor="let dish of dishes"
       class="example-card">
+
+      <img 
+      mat-card-image
+      (click)="redirectToDish(dish.id)"
+      [src]= "dish.img" alt="dish">
+
       <mat-card-header>
-        <mat-card-title>{{ dish.group }}</mat-card-title>
-        <mat-card-subtitle>{{ dish.nameDish }}</mat-card-subtitle>
-        
-        
+        <mat-card-title
+        (click)="redirectToDish(dish.id)"
+        >{{ dish.nameDish }}</mat-card-title>             
       </mat-card-header>
-      <img mat-card-image src={{ dish.img }} alt="dish">
-      <mat-card-content>
+      
+      <!-- <mat-card-content>
         <p>{{ dish.description }}</p>
-      </mat-card-content>
-      <div class="price">
-        
+      </mat-card-content> -->
+
+      <div class="price">        
         <span class="price-val">{{ dish.price | currency }}</span>
       </div>
+
       <mat-card-actions class="btns">
-        <button
-          mat-raised-button
-          class="btns-basket">
-          Add to basket
-        </button>
         <button
           mat-raised-button
           (click)="redirectToDish(dish.id)"
           color="primary">
-          Details
+          Деталі
         </button>
+        <button
+          mat-raised-button
+          (click)="addToBasket(dish)"
+          class="btns-basket">
+          Замовити
+        </button>
+        
       </mat-card-actions>
     </mat-card>
   </div>

@@ -1,0 +1,40 @@
+.conditions-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 22px;  
+    color: #777777;    
+}
+
+.conditions-title{
+    margin: 25px auto;
+    text-align: center;
+    font-size: 32px;
+    color: #000000;
+}
+
+.conditions-container-2{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider {
+    height: 100%;
+    border-bottom: 1px solid #E0E0E0;
+} 
+
+.conditions-description, .conditoins-schedule{
+    width: 50%;
+    margin-top: 15px;
+    padding: 0 15px;  
+}
+
+.conditoins-schedule{
+    border-left: 1px solid #E0E0E0;
+    h2, .phone{
+        color:#000000;
+    }
+}

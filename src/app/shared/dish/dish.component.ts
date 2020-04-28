@@ -3,6 +3,7 @@ import { IDish } from 'src/app/interfaces/food.interface';
 import { CrudService } from 'src/app/services/crud.service';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap, pluck } from 'rxjs/operators';
+import { BasketService } from 'src/app/services/basket.service';
 
 @Component({
   selector: 'app-dish',
@@ -11,11 +12,12 @@ import { switchMap, pluck } from 'rxjs/operators';
 })
 export class DishComponent{
 
-  dish: IDish;
+  public dish: IDish;
 
   constructor(
     private route: ActivatedRoute,
     private crudService: CrudService,
+    private basketService: BasketService,    
   ) {
 
     this.route.paramMap
@@ -25,7 +27,11 @@ export class DishComponent{
       )
       .subscribe(
         (dish: IDish) => this.dish = dish,
-  );
+    );
+  }
+
+  public addToBasket(dish: IDish) {
+    this.basketService.addToBasket(dish).subscribe(res => console.log(res));  
   }
 
 }

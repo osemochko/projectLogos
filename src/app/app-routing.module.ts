@@ -6,27 +6,40 @@ import { LoginComponent } from './shared/login/login.component';
 import { SignUpComponent } from './shared/sign-up/sign-up.component';
 import { BasketComponent } from './shared/basket/basket.component';
 import { DishComponent } from './shared/dish/dish.component';
+import { ConditionsComponent } from './shared/conditions/conditions.component';
+import { AuthGuard } from './guards/auth.guards';
 
 
 const routes: Routes = [
-  {    path: '',
-    redirectTo: 'category/all',
-    pathMatch: 'full',  },
-  {    path: 'category',
+  {    
+    path: '',
     redirectTo: 'category/All dishes',
     pathMatch: 'full',  },
-  {    path: 'category/:dish',
+  {    
+    path: 'category',
+    redirectTo: 'category/All dishes',
+    pathMatch: 'full',  },
+  {   
+    path: 'category/:group',
     component: CategoryComponent,  },
-  {    path: 'dish/:id',
+  {    
+    path: 'dish/:id',
     component: DishComponent,  },
-  {    path: 'login',
+  {    
+    path: 'conditions',
+    component: ConditionsComponent,  },
+  {    
+    path: 'login',
     component: LoginComponent,  },
-  {    path: 'sign-up',
+  {    
+    path: 'sign-up',
     component: SignUpComponent,  },
-  {    path: 'basket',
-    // canActivate: [AuthGuard],
+  {    
+    path: 'basket',
+    canActivate: [AuthGuard],
     component: BasketComponent,  },
-  {    path: '**',
+  {    
+    path: '**',
     component: NotFoundComponent,  }
 ];
 

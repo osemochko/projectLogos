@@ -6,19 +6,29 @@
   }
   
   .example-card {
-    max-width: 200px;
-    margin: 10px;
+    max-width: 250px;
+    max-height: 400px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   
+  img, mat-card-title{
+    cursor: pointer;
+    
+    &:hover {
+      color: #F2B33F;
+    }
+  }
+
   .btns {
     padding: 5px;
     display: flex;
     justify-content: space-between;
   
     &-basket {
+      width: 50%;
       background-color: yellowgreen;
       color: #fff;
     }

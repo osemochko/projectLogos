@@ -1,7 +1,8 @@
 header {
-    background-color: #293341;
+    // background-color: #fff;
     width: 100%;
     height: 60px;
+    border-bottom: 1px solid #E0E0E0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,30 +11,35 @@ header {
   }
 
 .side-nav-btn {
-    height: 60px;
+    height: 100%;
     width: 80px;
-    color: #6F6F6F;
+    color: #000000;
+    background-color: #fff;
     transition: 0.3s all;
     border: none;
-    border-right: 1px solid #E0E0E0;
     outline: none;
     cursor: pointer;
   
     &:hover {
-      color: #6164C1;
+      color: #0d0235;
     }
+  }
+
+.icon-side-nav-btn {
+    font-size: 32px;
   }
   
 .logo-container {
-    height: 60px;
-    background-color: #337ab7;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   
     .logo {
         min-width: 150px;
-        display: flex;
+        height: 100%;
+        background-color: #000000;
+        display: flex;       
         flex-direction: column;
         align-items: center;
         justify-content: center;  
@@ -48,32 +54,37 @@ header {
     }
 }
 
-.icon-side-nav-btn {
-    font-size: 32px;
-  }
+.call, .schedule, .conditions{
+  min-width: 170px;
+  text-align: center;
+}
+
+.conditions{
+  cursor: pointer;
+}
 
 .options-panel {
     min-width: 120px;
-    height: 60px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .divider {
-    height: 60px;
+    height: 100%;
     border-right: 1px solid #E0E0E0;
     margin: 0 5px;
 }  
 
 .basket {
-    margin: 0 45px 0 30px;
+    margin: 0 20px;
     padding: 0 2px;
     cursor: pointer;
 }
 
 .user-container {
-    height: 60px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,14 +92,14 @@ header {
 
 .user-name {
     font-size: 1em;
-    color: #ffffff;
+    // color: #000000;
     line-height: 1em;
     font-weight: 700;
     padding: 0 10px 0 20px;
 }
 
 .menu-item {
-    width: 140px;
+    width: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +108,7 @@ header {
   
     &:hover {
       background: none;
-      color: #e94e02;
+      color: #F2B33F;
     }
 }
   

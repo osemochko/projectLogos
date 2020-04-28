@@ -8,3 +8,12 @@ export interface IDish {
     price: number;
     available: boolean;
 }
+
+export interface ICart {
+    dish: IDish;
+    quantity: number;
+  }
+
+  export interface ICartResponse{
+    basket: ICart[];
+  }

@@ -1,1 +1,93 @@
-<p>basket works!</p>
+<div class="basket-container" >
+    <mat-card 
+    
+    class="example-card">
+        <mat-card-header>
+            <mat-card-title class="title">Кошик</mat-card-title>          
+        </mat-card-header>
+
+        <mat-card-content class="cart-product-item" *ngFor="let cartDish of cartList">
+            <div class="image-block">
+                <img mat-card-image [src]= "cartDish.dish.img" alt="dish">
+            </div>
+
+            <div class="description-block">{{ cartDish.dish.nameDish }}</div>
+
+            <div class="cost-amount">
+                <i class="material-icons" (click)="increment(cartDish.dish)">add_circle_outline</i>
+                 <p> {{cartDish.quantity}}</p>
+                    <!-- <input class="input-style" type="number" [ngModel]="quantity" (ngModelChange)="onChange.emit($event)"> -->
+                <i class="material-icons" (click)="decrement(cartDish.dish)">remove_circle_outline</i>
+            </div>
+          
+            <div class="price-block"> 
+                <span class="price-val">{{ cartDish.dish.price * cartDish.quantity | currency }}</span>
+            </div>
+            <div class="block-clear" (click)="removeFromBasket(cartDish)">
+                <i class="material-icons" >cancel</i>
+            </div>
+        </mat-card-content>
+        
+        <mat-card-content class="simple-item">
+            <div class="all-product-price">
+                К-сть: <span> {{ totalQ }}</span>
+                Сума замовлення: <span> {{ totalPrice | currency}}</span>
+            </div>
+            <div class="report-problem" *ngIf= "totalPrice < 200">
+                <i class="material-icons">report_problem</i>
+                <span>мінімальне замовлення: 200 грн</span>
+            </div>
+        </mat-card-content>
+
+        <mat-card-actions class="btns">
+            <a mat-button routerLink="/category/All dishes" color="warn" class="btns-link">
+                <i class="material-icons">keyboard_arrow_left</i>
+                <span>Повернутись в магазин</span>          
+            </a>
+                 
+            <button mat-raised-button class="btns-basket">Оформити замовлення</button>
+        </mat-card-actions>
+    </mat-card>
+
+
+    <!-- <div class="basket-simle-wrapper">
+        <div class="title-item">Кошик</div>
+
+        <div class="divider"></div>
+        
+        <div class="cart-product-item"></div>
+
+        <div class="divider"></div>
+
+        <div class="simple-item">
+            <div class="all-product-price">
+                Сума замовлення: <span>10</span>
+            </div>
+            <div class="all-product-price">
+                <i class="material-icons">report_problem</i>
+                <span>
+                    мінімальне замовлення: 200 грн
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="btns">
+        <a
+        mat-button
+        routerLink="/category"
+        color="warn"
+        class="btns-link">
+            <i class="material-icons icon-side-nav-btn">keyboard_arrow_left</i>
+            <span>Повернутись в магазин</span>          
+        </a>
+             
+        <button
+        mat-raised-button
+        class="btns-basket">
+        Оформити замовлення
+        </button>
+    </div> -->
+</div>
+
+

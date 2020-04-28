@@ -9,6 +9,7 @@ import { IDish } from '../interfaces/food.interface';
     providedIn: 'root'
 })
 export class CrudService{
+    
     private readonly URL: string = environment.apiUrl;
     private readonly ALL_DISHES: string = 'All dishes';
   
@@ -48,5 +49,6 @@ export class CrudService{
     public modifyDish(dish: IDish): void {
         this.http.put(`${this.URL}/dishes/${dish.id}`, dish)
           .subscribe((res) => console.log(res));
-    }     
+    }   
+     
 }

@@ -6,15 +6,38 @@
             <i class="material-icons icon-side-nav-btn">view_headline</i>
         </button>
         <div class="logo">
-            <h2>Craft&Kumpel</h2>
+          <h2>Kumpel Group</h2>
+        </div> 
+
+        <div class="call">
+          <i class="material-icons">call</i>
+          <span> +38 (068) 99 89 994</span>
         </div>
-    </div> 
-  
-    <div class="options-panel">
+
         <div class="divider"></div>
+
+        <div class="schedule">
+          <i class="material-icons">schedule</i>
+          <span> щодня з 12:00 до 20:00</span>
+        </div>
+
+        <div class="divider"></div>
+          
+        <span class="conditions" routerLink="/conditions">Умови доставки</span>
+
+        <div class="divider"></div>
+    </div> 
+    
+   
+    <div class="options-panel">
+             
+      <div class="divider"></div>
 
         <span 
             class="basket"
+            [matBadge]="basketItemsCount | async"
+            [matBadgeHidden]="hideMatBadge"
+            matBadgeColor="warn"
             routerLink="/basket"           
         >
             <i class="material-icons">shopping_cart</i>
