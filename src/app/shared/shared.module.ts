@@ -19,6 +19,7 @@ import { ConditionsComponent } from './conditions/conditions.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { MatRadioModule } from '@angular/material/radio';
 
 
 const comp: any = [
@@ -45,7 +46,8 @@ const comp: any = [
     MatDividerModule,
     MatListModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    MatRadioModule
   ]
 })
 

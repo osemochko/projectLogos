@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CurrencyPipe } from './currency.pipe';
+import { WeightPipe } from './weight.pipe';
 
 @NgModule({
   declarations: [
-    CurrencyPipe
+    CurrencyPipe,
+    WeightPipe
   ],
   exports: [
-    CurrencyPipe
+    CurrencyPipe,
+    WeightPipe
   ],
   imports: [
     CommonModule

@@ -24,8 +24,7 @@ export class DishComponent{
       .pipe(
         pluck('params', 'id'),
         switchMap((id: string) => this.crudService.getDishById(id)),
-      )
-      .subscribe(
+      ).subscribe(
         (dish: IDish) => this.dish = dish,
     );
   }

@@ -1,7 +1,5 @@
 <div class="category-container">
-    <mat-card
-      *ngFor="let dish of dishes"
-      class="example-card">
+    <mat-card *ngFor="let dish of dishes" class="example-card">
 
       <img 
       mat-card-image
@@ -14,10 +12,6 @@
         >{{ dish.nameDish }}</mat-card-title>             
       </mat-card-header>
       
-      <!-- <mat-card-content>
-        <p>{{ dish.description }}</p>
-      </mat-card-content> -->
-
       <div class="price">        
         <span class="price-val">{{ dish.price | currency }}</span>
       </div>

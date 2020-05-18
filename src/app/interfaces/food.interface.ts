@@ -14,6 +14,7 @@ export interface ICart {
     quantity: number;
   }
 
-  export interface ICartResponse{
+export interface ICartResponse{
     basket: ICart[];
   }
+
