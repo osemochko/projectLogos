@@ -1,0 +1,473 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "group": "Холодні закуски",
+      "nameDish": "Салатка помідорова з фетою",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2462-1.jpg",
+      "exitDish": 250,
+      "description": "Цибулею, грильованим кабачком, оливковою олією, бальзамічним оцтом, кедровими горішками 250",
+      "price": 68,
+      "available": true
+    },
+    {
+      "id": 2,
+      "group": "Холодні закуски",
+      "nameDish": "Слабосолений оселедець з німецьким салатом",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2410-1.jpg",
+      "exitDish": 310,
+      "description": "З «німецьким» салатом. Подається з чорним хлібом 100/150/60",
+      "price": 69,
+      "available": true
+    },
+    {
+      "id": 3,
+      "group": "Холодні закуски",
+      "nameDish": "Бочкові соління",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2402-1.jpg",
+      "exitDish": 530,
+      "description": "Квашені помідори, огірки, мариновані гострі перчики, крижавки 500/30",
+      "price": 69,
+      "available": false
+    },
+    {
+      "id": 4,
+      "group": "Холодні закуски",
+      "nameDish": "В’ялене м’ясо",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2397-1.jpg",
+      "exitDish": 160,
+      "description": "Сиров’ялені шийка, полядвиця, бастурма, хамон. Подається з соленими паличками 140/20",
+      "price": 90,
+      "available": true
+    },
+    {
+      "id": 5,
+      "group": "Перші страви",
+      "nameDish": "Галицький борщок з млинцем",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2407.jpg",
+      "exitDish": 390,
+      "description": "Питний борщок, заправлений сметаною. Подається з м’ясним млинцем 300/90",
+      "price": 55,
+      "available": false
+    },
+    {
+      "id": 6,
+      "group": "Перші страви",
+      "nameDish": "Юшка з сушених білих грибів",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2547.jpg",
+      "exitDish": 300,
+      "description": "З домашніми яєчними лазанками 300",
+      "price": 69,
+      "available": true
+    },
+    {
+      "id": 7,
+      "group": "Перші страви",
+      "nameDish": "Флячки",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2400.jpg",
+      "exitDish": 310,
+      "description": "Волові рубці, приготовані за традиційним галицьким переписом 300/10",
+      "price": 75,
+      "available": true
+    },
+    {
+      "id": 8,
+      "group": "Перші страви",
+      "nameDish": "Гуляшова зупа з телятиною",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2388.jpg",
+      "exitDish": 325,
+      "description": "Зупа з телятиною, паприкою та помідорами та галушками 75/250",
+      "price": 75,
+      "available": true
+    },
+    {
+      "id": 9,
+      "group": "Другі страви",
+      "nameDish": "Індик з ронделя",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2454-1.jpg",
+      "exitDish": 295,
+      "description": "Подається з печеними овочами та гострим соусом 170/75/50",
+      "price": 120,
+      "available": false
+    },
+    {
+      "id": 10,
+      "group": "Другі страви",
+      "nameDish": "Пульпетка з м'яса птиці",
+      "img": "https://kumpelgroup.com/wp-content/uploads/zobrazhennya_viber_2020-04-07_14-17-28-e1586258516437.jpg",
+      "exitDish": 445,
+      "description": "Пульпетка з м'яса птиці з сирно-шпинатною начинкою. Подаєтся з картопляним скибочками з тим’яном,печеними овочами та сосом з лісових грибів",
+      "price": 110,
+      "available": false
+    },
+    {
+      "id": 11,
+      "group": "Другі страви",
+      "nameDish": "Свинні реберця печені в пиві",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_0862-e1585653434971.jpg",
+      "exitDish": 425,
+      "description": "Подаються з печеними овочами та соусом з копченого перцю 300/75/50",
+      "price": 159,
+      "available": true
+    },
+    {
+      "id": 12,
+      "group": "Другі страви",
+      "nameDish": "Свинна вирізка з печеними овочами",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2467.jpg",
+      "exitDish": 375,
+      "description": "Подається з печеними овочами та соусом з копченого перцю 250/75/50",
+      "price": 145,
+      "available": false
+    },
+    {
+      "id": 13,
+      "group": "Другі страви",
+      "nameDish": "Голонка вуджена",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2444.jpg",
+      "exitDish": 700,
+      "description": "Копчена свиняча нога засмажена в пиві  ",
+      "price": 200,
+      "available": true
+    },
+    {
+      "id": 14,
+      "group": "Другі страви",
+      "nameDish": "Окунь в сметані запечений",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2465.jpg",
+      "exitDish": 500,
+      "description": "Філе морського окуня в сметанковому соусі зі смаженою картоплею, цибулею та помідорами під сирною скоринкою 500",
+      "price": 125,
+      "available": false
+    },
+    {
+      "id": 15,
+      "group": "Другі страви",
+      "nameDish": "Форель запечена з тим'яном",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2475.jpg",
+      "exitDish": 270,
+      "description": "Подається з грильованими овочами 150/120",
+      "price": 150,
+      "available": true
+    },
+    {
+      "id": 16,
+      "group": "Гарячі закуски",
+      "nameDish": "Бігус",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2440.jpg",
+      "exitDish": 400,
+      "description": "Готується за старольвівським рецептом. Капуста тушкована зі свининою, телятиною, копченостями, білими грибами. Подається на пательні зі скибочками печеної",
+      "price": 80,
+      "available": false
+    },
+    {
+      "id": 17,
+      "group": "Гарячі закуски",
+      "nameDish": "Карпатський банош ",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2432.jpg",
+      "exitDish": 380,
+      "description": "Кукурудзяна каша, варена на сметані. Подається в зі шкварками, хрустким копченим беконом та бринзою 300/30/50",
+      "price": 80,
+      "available": true
+    },
+    {
+      "id": 18,
+      "group": "Гарячі закуски",
+      "nameDish": "Карпатський банош з мачкою з білих сушених грибів та бринзою",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2434.jpg",
+      "exitDish": 500,
+      "description": "Карпатський банош з мачкою з білих сушених грибів та бринзою 300/150/50",
+      "price": 80,
+      "available": true
+    },
+    {
+      "id": 19,
+      "group": "Гарячі закуски",
+      "nameDish": "Пательня смажених пирогів зі шкварками",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2438.jpg",
+      "exitDish": 180,
+      "description": "З картоплею та бринзою. Подаються з шкварками. 150/30",
+      "price": 54,
+      "available": true
+    },
+    {
+      "id": 20,
+      "group": "Гарячі закуски",
+      "nameDish": "Фірмові кумпельові вушка",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2413.jpg",
+      "exitDish": 200,
+      "description": "З рожевим соусом 150/50",
+      "price": 75,
+      "available": false
+    },
+    {
+      "id": 21,
+      "group": "Гарячі закуски",
+      "nameDish": "Курячі крильця фаршировані,смажені та копчені",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2425.jpg",
+      "exitDish": 270,
+      "description": "Курячі крильця фаршировані,смажені та копчені. З сирним соусом 220/50",
+      "price": 75,
+      "available": false
+    },
+    {
+      "id": 22,
+      "group": "Гарячі закуски",
+      "nameDish": "Цибулеві кільця і бараболі",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2418.jpg",
+      "exitDish": 245,
+      "description": "З рожевим соусом 120/75/50",
+      "price": 70,
+      "available": false
+    },
+    {
+      "id": 23,
+      "group": "Гарячі закуски",
+      "nameDish": "Гарячий пиріг з бараниною",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_0859-e1585653720867.jpg",
+      "exitDish": 500,
+      "description": "Листкове та дріжджове тісто, соковита баранина, кінза та ароматні спеції. Подається з гострим  сосом.",
+      "price": 120,
+      "available": false
+    },
+    {
+      "id": 24,
+      "group": "Гарячі закуски",
+      "nameDish": "Пиріг цибулевий",
+      "img": "https://kumpelgroup.com/wp-content/uploads/photo_2020-03-31_14-06-44-e1585653291174.jpg",
+      "exitDish": 550,
+      "description": "Цибулевий пиріг з бринзою, копченостями та з соусом з білих сушених грибів",
+      "price": 120,
+      "available": true
+    },
+    {
+      "id": 25,
+      "group": "Ковбаски",
+      "nameDish": "Метрова ковбаса ",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2490-1.jpg",
+      "exitDish": 800,
+      "description": "три види начинки: свинна, теляча з печерицями, куряча з сиром",
+      "price": 300,
+      "available": false
+    },
+    {
+      "id": 26,
+      "group": "Ковбаски",
+      "nameDish": "Ковбаска шпікачка",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2508-1.jpg",
+      "exitDish": 1000,
+      "description": "Соковита ковбаска з телятини та свинини",
+      "price": 350,
+      "available": false
+    },
+    {
+      "id": 27,
+      "group": "Ковбаски",
+      "nameDish": "Ковбаска паприкова",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2510-1.jpg",
+      "exitDish": 1000,
+      "description": "Ковбаска з телятини, свинини та птиці",
+      "price": 350,
+      "available": false
+    },
+    {
+      "id": 28,
+      "group": "Ковбаски",
+      "nameDish": "Ковбаска Ііндича",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2506.jpg",
+      "exitDish": 1000,
+      "description": "Ніжна ковбаска з м’яса індика з ароматом копченостей  ",
+      "price": 350,
+      "available": false
+    },
+    {
+      "id": 29,
+      "group": "Ковбаски",
+      "nameDish": "Ковбаска куряча смажена",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2503.jpg",
+      "exitDish": 1000,
+      "description": "Ковбаска, начинена курячим філе та зеленим маслом  ",
+      "price": 350,
+      "available": false
+    },
+    {
+      "id": 30,
+      "group": "Ковбаски",
+      "nameDish": "Ковбаска Байдерка",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2516-1.jpg",
+      "exitDish": 1000,
+      "description": "Класична галицька ковбаска до пива зі свинини  ",
+      "price": 350,
+      "available": true
+    },
+    {
+      "id": 31,
+      "group": "Ковбаски",
+      "nameDish": "Пишна Фраєрка",
+      "img": "https://kumpelgroup.com/wp-content/uploads/zobrazhennya_viber_2020-04-07_14-16-47-e1586258625624.jpg",
+      "exitDish": 300,
+      "description": "Свіжоспечена домашня ковбаска зі свинної карківки",
+      "price": 196,
+      "available": false
+    },
+    {
+      "id": 32,
+      "group": "Соуси",
+      "nameDish": "З копченого перцю",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2540.jpg",
+      "exitDish": 200,
+      "description": "",
+      "price": 65,
+      "available": true
+    },
+    {
+      "id": 33,
+      "group": "Соуси",
+      "nameDish": "Соус сирний",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2536.jpg",
+      "exitDish": 200,
+      "description": "",
+      "price": 65,
+      "available": true
+    },
+    {
+      "id": 34,
+      "group": "Соуси",
+      "nameDish": "Соус гірчичний гострий",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2541.jpg",
+      "exitDish": 200,
+      "description": "",
+      "price": 65,
+      "available": true
+    },
+    {
+      "id": 35,
+      "group": "Десерти",
+      "nameDish": "Торт Захер",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2500-2.jpg",
+      "exitDish": 200,
+      "description": "Класичний віденський шоколадний торт, який готується у Львові з XΙX століття 100/50",
+      "price": 89,
+      "available": false
+    },
+    {
+      "id": 36,
+      "group": "Десерти",
+      "nameDish": "Андрути",
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2487-2.jpg",
+      "exitDish": 240,
+      "description": "Традиційний львівський вафельний торт. 3 шт. шоколадного, 3 шт. кокосового",
+      "price": 89,
+      "available": true
+    },
+    {
+      "id": 37,
+      "group": "Десерти",
+      "nameDish": "Торт Львівський",
+      "exitDish": 130,
+      "img": "https://kumpelgroup.com/wp-content/uploads/img_2482.jpg",
+      "description": "Легуміна з грецькими горіхами, бізе та кавовим кремом для правдивого гурмана 120/10",
+      "price": 69,
+      "available": true
+    }
+  ],
+  "deliveries": [
+    {
+      "type": "Кур'єр по Львову",
+      "price": 50
+    },
+    {
+      "type": "Самовивіз",
+      "price": 0
+    }
+  ],
+  "users": [
+    {
+      "email": "test1234@gmail.com",
+      "lastName": "Semochko",
+      "firstName": "Olya",
+      "password": "test1234",
+      "basket": [
+        {
+          "dish": {
+            "id": 3,
+            "group": "Холодні закуски",
+            "nameDish": "Бочкові соління",
+            "img": "https://kumpelgroup.com/wp-content/uploads/img_2402-1.jpg",
+            "exitDish": 530,
+            "description": "Квашені помідори, огірки, мариновані гострі перчики, крижавки 500/30",
+            "price": 69,
+            "available": false
+          },
+          "quantity": 6
+        },
+        {
+          "dish": {
+            "id": 18,
+            "group": "Гарячі закуски",
+            "nameDish": "Карпатський банош з мачкою з білих сушених грибів та бринзою",
+            "img": "https://kumpelgroup.com/wp-content/uploads/img_2434.jpg",
+            "exitDish": 500,
+            "description": "Карпатський банош з мачкою з білих сушених грибів та бринзою 300/150/50",
+            "price": 80,
+            "available": true
+          },
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "user": "test1234@gmail.com",
+      "basket": [
+        {
+          "dish": {
+            "id": 2,
+            "group": "Холодні закуски",
+            "nameDish": "Слабосолений оселедець з німецьким салатом",
+            "img": "https://kumpelgroup.com/wp-content/uploads/img_2410-1.jpg",
+            "exitDish": 310,
+            "description": "З «німецьким» салатом. Подається з чорним хлібом 100/150/60",
+            "price": 69,
+            "available": true
+          },
+          "quantity": 8
+        }
+      ],
+      "id": 1
+    },
+    {
+      "user": "test1234@gmail.com",
+      "basket": [
+        {
+          "dish": {
+            "id": 3,
+            "group": "Холодні закуски",
+            "nameDish": "Бочкові соління",
+            "img": "https://kumpelgroup.com/wp-content/uploads/img_2402-1.jpg",
+            "exitDish": 530,
+            "description": "Квашені помідори, огірки, мариновані гострі перчики, крижавки 500/30",
+            "price": 69,
+            "available": false
+          },
+          "quantity": 4
+        },
+        {
+          "dish": {
+            "id": 18,
+            "group": "Гарячі закуски",
+            "nameDish": "Карпатський банош з мачкою з білих сушених грибів та бринзою",
+            "img": "https://kumpelgroup.com/wp-content/uploads/img_2434.jpg",
+            "exitDish": 500,
+            "description": "Карпатський банош з мачкою з білих сушених грибів та бринзою 300/150/50",
+            "price": 80,
+            "available": true
+          },
+          "quantity": 1
+        }
+      ],
+      "id": 2
+    }
+  ]
+}
